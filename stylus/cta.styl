@@ -31,6 +31,8 @@
   border-radius: 2px
   margin-bottom: 10px
   font-size: 0.8em
+  padding-left: 20px
+  box-sizing: border-box
 
 .cta__form button
   font-family: "Raleway", sans-serif;
@@ -45,3 +47,34 @@
   box-shadow: 1.1px 1.3px 4px rgba(0, 0, 0, 0.07), 9px 10px 32px rgba(0, 0, 0, 0.14)
   margin-bottom: 20px
 
+@media (min-width: 1024px)
+  .cta
+    flex-direction: row
+    justify-content: space-evenly
+    text-align: left
+    align-items: center
+    padding: 80px 0
+  
+  .cta h3
+    margin: 0 0 20px 0
+    font-size 2em
+    max-width: 600px
+
+  .cta p
+    margin: 0
+    padding: 0
+    max-width: 500px
+    line-height: 20px
+
+  .cta__form
+    display: flex
+    flex-direction: column
+
+  .cta__form input
+    width: 450px
+    height: 35px
+
+  .cta__form button
+    width: 200px
+    background-color: $bright-blue
+    margin-bottom: 0
